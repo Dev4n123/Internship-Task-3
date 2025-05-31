@@ -1,0 +1,50 @@
+.h1{
+    text-align: center;
+}
+.offer {
+  background: linear-gradient(135deg, #f3f4f6, #e0e0e0);
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.offer h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #343a40;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.col {
+  flex: 1 1 calc(25% - 20px); /* 4 cards per row on large screens */
+  max-width: calc(25% - 20px);
+  min-width: 250px;
+}
+
+@media (max-width: 992px) {
+  .col {
+    flex: 1 1 calc(33.333% - 20px); /* 3 cards per row on medium screens */
+    max-width: calc(33.333% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .col {
+    flex: 1 1 calc(50% - 20px); /* 2 cards per row on small screens */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .col {
+    flex: 1 1 100%; /* 1 card per row on extra small screens */
+    max-width: 100%;
+  }
+}

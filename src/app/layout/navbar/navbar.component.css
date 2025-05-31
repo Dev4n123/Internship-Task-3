@@ -1,34 +1,20 @@
 ul { 
-
 display: flex; 
-
 justify-content: space-evenly; 
-
-background-color:purple; 
+background-color: purple; 
 align-items: center; 
 text-decoration: none; 
-
 color: white; 
-
 list-style: none; 
 padding: 0; 
-
 margin: 0; 
-
 } 
- 
 li { 
- 
 list-style: none; 
 padding: 10px; 
 margin: 0; 
- 
 } 
- 
 a { 
- 
 text-decoration: none; 
- 
-color: white !important; 
-
+color: Iwhite !important; 
 }

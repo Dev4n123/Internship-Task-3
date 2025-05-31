@@ -1,10 +1,27 @@
 import { Routes } from '@angular/router';
-import { DistrictComponent } from './district/district.component';
-import { DetailPageComponent } from './pages/detail-page/detail-page.component';
+import { HomeComponent } from './page/home/home.component';
+import { CategoryComponent } from './page/category/category.component';
+import { ProductComponent } from './page/product/product.component';
+import { LoginComponent } from './page/login/login.component';
 
 export const routes: Routes = [
+    {
+        path:'',
+        component:HomeComponent
+    },
+    {
+        path:'category',
+        component:CategoryComponent
+    },
 
-    {path:'',component:DistrictComponent},
-    {path:'district/:id',component:DetailPageComponent},
+    {
+        path:'product/:id',
+        component:ProductComponent
+    },
+     {
+        path:'login',
+        component:LoginComponent
+    },
     
+
 ];
