@@ -1,0 +1,29 @@
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* spacing between cards */
+  justify-content: center;
+}
+
+.product-card {
+  flex: 1 1 calc(33.333% - 40px); /* 3 cards per row with spacing accounted */
+  box-sizing: border-box;
+  max-width: 300px;
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  .product-card {
+    flex: 1 1 calc(50% - 40px); /* 2 cards per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    flex: 1 1 100%; /* 1 card per row */
+  }
+}
